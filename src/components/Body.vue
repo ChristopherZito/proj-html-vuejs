@@ -7,7 +7,7 @@
             <Main/>
         </main>
         <footer>
-            <Footer/>
+            <Footer :info="footer"/>
         </footer>
     </section>
 </template>
@@ -116,6 +116,63 @@ export default {
                     title:"Contact us"
                 },
             ],
+            footer:[
+                {
+                    title:"AVADA TECH FORUM",
+                    text:"Sed semper, nisl id feugiat eleifend, erat est digssim felis, quis auctor elit enim nec ante. Cras et nibh risus. Pellentesque non mi sit amet mi internemtum",
+                },
+                {
+                    title:"POPULAR TOPICS",
+                    ref:[
+                        {
+                           text:"Nam a dolor volupat massa auctor semper",
+                        },
+                        {
+                           text:"Nam a dolor volupat massa auctor semper",
+                        },
+                        {
+                           text:"Nam a dolor volupat massa auctor semper",
+                        },
+                        {
+                           text:"Nam a dolor volupat massa auctor semper",
+                        },
+                    ]
+                },
+                {
+                    title:"RECENT TOPICS",
+                    ref:[
+                        {
+                           text:"Nam a dolor volupat massa auctor semper",
+                        },
+                        {
+                           text:"Nam a dolor volupat massa auctor semper",
+                        },
+                        {
+                           text:"Nam a dolor volupat massa auctor semper",
+                        },
+                        {
+                           text:"Nam a dolor volupat massa auctor semper",
+                        },
+                    ]
+                },
+                {
+                    title:"LATEST REPLIES",
+                    ref:[
+                        {
+                           text:"Nam a dolor volupat massa auctor semper",
+                        },
+                        {
+                           text:"Nam a dolor volupat massa auctor semper",
+                        },
+                        {
+                           text:"Nam a dolor volupat massa auctor semper",
+                        },
+                        {
+                           text:"Nam a dolor volupat massa auctor semper",
+                        },
+                    ]
+                },
+            ],
         }
     }
 }
@@ -129,6 +186,11 @@ header {
     width: 100%;
     /* debug */
     /* height: 100px; */
+}
+footer {
+    width: 100%;
+    /* debug */
+    /*background-color: red; */
 }
 
 </style>
