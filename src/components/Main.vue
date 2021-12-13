@@ -3,52 +3,12 @@
     <div>
         <!-- jumbotron -->
         <Jumbotron/>
-
-        <!-- primo blocco main -->
-        <section>
-            <!-- titolo -->
-            <!-- immagini -->
-                <!-- img/title/date/comments/description -->
-        </section>
-        <!-- secondo blocco main -->
-        <section>
-            <!-- title -->
-            <!-- text -->
-            <!-- button -->
-        </section>
-        <!-- terzo blocco main -->
-        <section>
-            <!-- immagini -->
-                <!-- img/title/date/comments/description -->
-        </section>
-        <!-- quarto blocco -->
-        <section>
-            <!-- left -->
-            <div>
-                <!-- title -->
-                <!-- text -->
-                <!-- button -->
-            </div>
-            <!-- right -->
-            <div>
-                <!-- titolo -->
-                <!-- immagini -->
-                <!-- img/title/date/comments/description -->
-            </div>
-        </section>
+        <!-- main part -->
+        <News/>
         <!-- break-line blog-->
-        <section>
-            <!-- title -->
-            <div>
-                <!-- blog section x8 -->
-            </div>
-        </section>
+        <Blog/>
         <!-- break-line forum -->
-        <section>
-            <!-- title -->
-            <!-- text -->
-            <!-- button -->
-        </section>
+        <Forum/>
         <!-- NEWSLETTER -->
         <NewsLetter/>
     </div>
@@ -56,12 +16,18 @@
 
 <script>
 import Jumbotron from '@/components/Jumbotron.vue'
+import News from '@/components/News.vue'
+import Blog from '@/components/Blog.vue'
+import Forum from '@/components/Forum.vue'
 import NewsLetter from '@/components/NewsLetter.vue'
 
 export default {
 name: 'Main',
 components: {
     Jumbotron,
+    News,
+    Blog,
+    Forum,
     NewsLetter,
 }
 }
