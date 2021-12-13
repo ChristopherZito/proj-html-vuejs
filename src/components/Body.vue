@@ -1,7 +1,7 @@
 <template>
     <section>
         <header>
-            <Header :position="page"/>
+            <Header/>
         </header>
         <main>
             <Main/>
@@ -30,78 +30,75 @@ export default {
                 {
                     title:"Home",
                     //prodotti in pagina
-                    product:{
-                        position:"top",
-                        tutorial:false,
-                        img:"",
-                        title:"",
-                        time:"",
-                        text:"",
-                        comments:{
-                            comment:"",
-                            comment:"",
+                    products:[
+                        {
+                            position:"top",
+                            tutorial:false,
+                            img:"",
+                            title:"",
+                            time:"",
+                            text:"",
+                            comments:[
+                                {
+                                    comment:"",
+                                },
+                                {
+                                    comment:"",
+                                },
+                            ],
                         },
-                    },
-                    product:{
-                        position:"top",
-                        tutorial:false,
-                        img:"",
-                        title:"",
-                        time:"",
-                        text:"",
-                        comments:{
-                            comment:"",
-                            comment:"",
+                        {
+                            position:"top",
+                            tutorial:false,
+                            img:"",
+                            title:"",
+                            time:"",
+                            text:"",
+                            comments:{
+                            },
                         },
-                    },
-                    product:{
-                        position:"top",
-                        tutorial:true,
-                        img:"",
-                        title:"",
-                        time:"",
-                        text:"",
-                        comments:{
-                            comment:"",
-                            comment:"",
+                        {
+                            position:"top",
+                            tutorial:true,
+                            img:"",
+                            title:"",
+                            time:"",
+                            text:"",
+                            comments:{
+                            },
                         },
-                    },
-                    product:{
-                        position:"bottom",
-                        tutorial:true,
-                        img:"",
-                        title:"",
-                        time:"",
-                        text:"",
-                        comments:{
-                            comment:"",
-                            comment:"",
+                        {
+                            position:"bottom",
+                            tutorial:true,
+                            img:"",
+                            title:"",
+                            time:"",
+                            text:"",
+                            comments:{
+                            },
                         },
-                    },
-                    product:{
-                        position:"bottom",
-                        tutorial:false,
-                        img:"",
-                        title:"",
-                        time:"",
-                        text:"",
-                        comments:{
-                            comment:"",
-                            comment:"",
+                        {
+                            position:"bottom",
+                            tutorial:false,
+                            img:"",
+                            title:"",
+                            time:"",
+                            text:"",
+                            comments:{
+                            },
                         },
-                    },
-                    product:{
-                        position:"bottom",
-                        tutorial:true,
-                        img:"",
-                        title:"",
-                        time:"",
-                        text:"",
-                        comments:{
-                            comment:"",
-                            comment:"",
+                        {
+                            position:"bottom",
+                            tutorial:true,
+                            img:"",
+                            title:"",
+                            time:"",
+                            text:"",
+                            comments:{
+                            },
                         },
-                    },
+                        
+                    ],
                 },
                 {
                     title:"Apple"
