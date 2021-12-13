@@ -6,9 +6,9 @@
         <!-- main part -->
         <News/>
         <!-- break-line blog-->
-        <Blog/>
-        <!-- break-line forum -->
         <Forum/>
+        <!-- break-line forum -->
+        <Community/>
         <!-- NEWSLETTER -->
         <NewsLetter/>
     </div>
@@ -17,8 +17,8 @@
 <script>
 import Jumbotron from '@/components/Jumbotron.vue'
 import News from '@/components/News.vue'
-import Blog from '@/components/Blog.vue'
 import Forum from '@/components/Forum.vue'
+import Community from '@/components/Community.vue'
 import NewsLetter from '@/components/NewsLetter.vue'
 
 export default {
@@ -26,8 +26,8 @@ name: 'Main',
 components: {
     Jumbotron,
     News,
-    Blog,
     Forum,
+    Community,
     NewsLetter,
 }
 }

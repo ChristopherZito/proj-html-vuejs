@@ -38,6 +38,9 @@
                 <!-- img/title/date/comments/description -->
             </div>
         </section>
+        <h1>
+            READ OUR BLOG 
+        </h1>
   </div>
 </template>
 

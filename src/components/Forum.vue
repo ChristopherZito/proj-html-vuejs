@@ -1,72 +1,125 @@
 <template>
-    <div id="container">
+  <div id="container">
+        
+        <section>
+            <!-- title -->
+            <h4>
+                PHASELLUS EGET METUS
+            </h4>
             <h1>
-                GO TO OUR FORUM 
+                Forum Section
             </h1>
-            <section>
-                <div id="box">
-                     <!-- title -->
-                    <h1>
-                        Hey! join to our
-                        Community
-                    </h1>
-                    <!-- text -->
-                    <p>
-                        Nulla molestie tortor nec lectus venenatis, sed blandit deu finibus. Curabitur feugia vulputate purus ipsums dolores ficilis uns etra.
-                    </p>
-                    <!-- button -->
-                    <button>
-                        SING UP <i class="fas fa-angle-right"></i>
-                    </button>
+            <hr>
+            <div id="box">
+                <!-- blog section x8 -->
+                <div class="forum" v-for="element,i in forum" :key="i">
+                    <i :class="element.icon"></i>
+                    <h2>
+                        {{element.text}}
+                    </h2>
                 </div>
-            </section>
-    </div>
+            </div>
+        </section>
+        <h1 id="break-line">
+            GO TO THE FORUM
+        </h1>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Forum',
+    name: 'Forum',
+    data() {
+        return {
+            forum: [
+                {
+                    icon:"fas fa-file-alt",
+                    text:"News & Community",
+                },
+                {
+                    icon:"fab fa-apple",
+                    text:"Apple Forum",
+                },
+                {
+                    icon:"fab fa-windows",
+                    text:"Microsoft Forum",
+                },
+                {
+                    icon:"fab fa-android",
+                    text:"Android Forum",
+                },
+                {
+                    icon:"fas fa-coffee",
+                    text:"General Discussion",
+                },
+                {
+                    icon:"fas fa-cubes",
+                    text:"Apps & Software",
+                },
+                {
+                    icon:"fas fa-laptop",
+                    text:"Gadgets & Stuff",
+                },
+                {
+                    icon:"fas fa-wrench",
+                    text:"Tutorial & Guides",
+                },
+            ]
+        }
+    }
 }
 </script>
 
 <style scoped lang="scss">
 #container {
     text-align: center;
-    background-color: black;
-    color: #ffff;
+    background-color: #e7e7e7;
 
-    h1 {
+    #break-line {
+        color: #ffff;
         padding: 50px 0;
+        background-color: black;
     }
 
     section {
-        background-image: url("../assets/img/join_now_cta_bg.jpg");
-        width: 100%;
-        /* height: 400px; */
-
-        #box {
-            width: 30%;
-            margin: auto;
-            padding: 140px 0;
-        }
+        width: 60%;
+        margin: auto;
+        padding: 50px 0;
 
         h1 {
             font-size: 50px;
-            padding: 0;
+            font-weight: 800;
+            margin: 30px 0;
         }
 
-        p {
-            margin: 20px 0;
-            line-height: 40px;
+        hr {
+            width: 100px;
+            border: 1px solid #fc8c53;
+            margin: 0 auto 50px;
         }
 
-        button {
-            font-weight: 600;
-            color: #ffff;
-            padding: 10px 30px;
-            background-color: #2295af;
+        #box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .forum {
+                width: 22%;
+                border-top: 4px #399bc0 solid ;
+                padding: 40px 10px 80px;
+                background-color: #ffff;
+                margin-bottom: 35px;
+
+                i {
+                    font-size: 40px;
+                    background-color: #fc8c53;
+                    color: #ffff;
+                    border-radius: 50%;
+                    padding: 20px 25px;
+                    margin-bottom: 10px;
+                }
+            }
         }
     }
 }
-
 </style>
