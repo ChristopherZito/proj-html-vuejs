@@ -71,6 +71,7 @@ name: 'Jumbotron',
 
 #text {
     background-color: #e7e7e7;
+    background-position: center;
 
     div {
         width: 60%;

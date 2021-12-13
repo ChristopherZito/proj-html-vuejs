@@ -28,7 +28,7 @@
                     </p>
                 </div>
                 <!-- social -->
-                <div>
+                <div id="link">
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-instagram"></i>
@@ -96,27 +96,29 @@ export default {
         display: flex;
         justify-content: space-between;
 
-        i {
-            font-size: 25px;
-            padding: 15px 17px;
-            color: white;
-            border-radius: 50%;
-            margin: 0 10px;
-        }
-        .fa-facebook-f {
-            background-color: #4562b0;
-            padding: 15px 20px;
-        }
-        .fa-twitter {
-            background-color: #74def4;
-        }
-        .fa-instagram {
-            background-color: #516faa;
-        }
-        .fa-youtube {
-            background-color: #951a0c;
-            padding: 15px 14px;
-        }
+        #link {
+            i {
+                font-size: 25px;
+                padding: 15px 17px;
+                color: white;
+                border-radius: 50%;
+                margin: 0 10px;
+            }
+            .fa-facebook-f {
+                background-color: #4562b0;
+                padding: 15px 20px;
+            }
+            .fa-twitter {
+                background-color: #74def4;
+            }
+            .fa-instagram {
+                background-color: #516faa;
+            }
+            .fa-youtube {
+                background-color: #951a0c;
+                padding: 15px 14px;
+            }
+        }  
     }
 }
 
