@@ -2,14 +2,8 @@
 <!-- N.B. Creare gli elementi per ogni sezione -->
     <div>
         <!-- jumbotron -->
-        <section>
-            <!-- titolo -->
-            <!-- testo -->
-            <!-- bottone -->
-        </section>
-        <!-- testo avada -->
-        <section>
-        </section>
+        <Jumbotron/>
+
         <!-- primo blocco main -->
         <section>
             <!-- titolo -->
@@ -65,9 +59,15 @@
 </template>
 
 <script>
+import Jumbotron from '@/components/Jumbotron.vue'
+
 export default {
 name: 'Main',
+components: {
+    Jumbotron
 }
+}
+
 </script>
 
 <style scoped lang="scss">
