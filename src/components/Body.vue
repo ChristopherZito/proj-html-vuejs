@@ -1,15 +1,15 @@
 <template>
-  <section>
-      <header>
-          <Header/>
-      </header>
-      <main>
-          <Main/>
-      </main>
-      <footer>
-          <Footer/>
-      </footer>
-  </section>
+    <section>
+        <header>
+            <Header/>
+        </header>
+        <main>
+            <Main/>
+        </main>
+        <footer>
+            <Footer/>
+        </footer>
+    </section>
 </template>
 
 <script>
@@ -18,12 +18,12 @@ import Main from '@/components/Main.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
-  name: 'Body',
-  components: {
-    Header,
-    Main,
-    Footer
-  }
+    name: 'Body',
+    components: {
+        Header,
+        Main,
+        Footer
+    }
 }
 </script>
 

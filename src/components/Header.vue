@@ -1,6 +1,13 @@
 <template>
-  <div>
-  </div>
+    <div>
+        <!--header -->
+        <section>
+            <!-- logo -->
+            <!-- lista info -->
+                <!-- bottone -->
+                <!-- search -->
+        </section>
+    </div>
 </template>
 
 <script>
