@@ -50,21 +50,19 @@
             <!-- button -->
         </section>
         <!-- NEWSLETTER -->
-        <section>
-            <!-- title -->
-            <!-- text area -->
-            <!-- button -->
-        </section>
+        <NewsLetter/>
     </div>
 </template>
 
 <script>
 import Jumbotron from '@/components/Jumbotron.vue'
+import NewsLetter from '@/components/NewsLetter.vue'
 
 export default {
 name: 'Main',
 components: {
-    Jumbotron
+    Jumbotron,
+    NewsLetter,
 }
 }
 
