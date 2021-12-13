@@ -1,7 +1,7 @@
 <template>
     <section>
         <header>
-            <Header/>
+            <Header :position="page"/>
         </header>
         <main>
             <Main/>
@@ -122,5 +122,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+header {
+    background-color: #27aabe;
+    width: 100%;
+    /* debug */
+    /* height: 100px; */
+}
 
 </style>
