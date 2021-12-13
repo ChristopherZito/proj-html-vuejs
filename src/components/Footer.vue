@@ -5,7 +5,8 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Footer',
+
 }
 </script>
 
