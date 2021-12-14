@@ -7,7 +7,7 @@
                 PHASELLUS EGET METUS
             </h4>
             <h1>
-                Forum Section
+                Forum Sections
             </h1>
             <hr>
             <div id="box">

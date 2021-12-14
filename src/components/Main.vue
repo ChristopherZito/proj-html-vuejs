@@ -4,7 +4,7 @@
         <!-- jumbotron -->
         <Jumbotron/>
         <!-- main part -->
-        <News/>
+        <News :products="product"/>
         <!-- break-line blog-->
         <Forum/>
         <!-- break-line forum -->
@@ -29,7 +29,10 @@ components: {
     Forum,
     Community,
     NewsLetter,
-}
+},
+props: {
+    product: Array,
+},
 }
 
 </script>

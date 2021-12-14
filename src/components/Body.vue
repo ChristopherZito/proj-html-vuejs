@@ -4,7 +4,7 @@
             <Header :position="page"/>
         </header>
         <main>
-            <Main/>
+            <Main :product="page[0].productsHome"/>
         </main>
         <footer>
             <Footer :info="footer"/>
@@ -30,14 +30,14 @@ export default {
                 {
                     title:"Home",
                     //prodotti in pagina
-                    products:[
+                    productsHome:[
                         {
                             position:"top",
                             tutorial:false,
-                            img:"",
-                            title:"",
-                            time:"",
-                            text:"",
+                            img:"https://avada.theme-fusion.com/forum/wp-content/uploads/sites/51/2015/10/post_feat_img_25-700x441.jpg",
+                            title:"Morbi vitae deu euismod vulptate sollicitudin",
+                            time:"October 11th, 2015",
+                            text:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
                             comments:[
                                 {
                                     comment:"",
@@ -50,50 +50,50 @@ export default {
                         {
                             position:"top",
                             tutorial:false,
-                            img:"",
-                            title:"",
-                            time:"",
-                            text:"",
+                            img:"post_feat_img_24-320x202.jpg",
+                            title:"Vivamus pellenteque, felis quis varius",
+                            time:"October 11th, 2015",
+                            text:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
                             comments:{
                             },
                         },
                         {
                             position:"top",
                             tutorial:true,
-                            img:"",
-                            title:"",
-                            time:"",
-                            text:"",
+                            img:"post_feat_img_23-320x202.jpg",
+                            title:"Donec ornare pretium eget scelisque justo",
+                            time:"October 11th, 2015",
+                            text:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
                             comments:{
                             },
                         },
                         {
                             position:"bottom",
                             tutorial:true,
-                            img:"",
-                            title:"",
-                            time:"",
-                            text:"",
+                            img:"post_feat_img_22-320x202.jpg",
+                            title:"Fusce sollicitudin nunc sed placerat varius",
+                            time:"October 11th, 2015",
+                            text:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
                             comments:{
                             },
                         },
                         {
                             position:"bottom",
                             tutorial:false,
-                            img:"",
-                            title:"",
-                            time:"",
-                            text:"",
+                            img:"post_feat_img_21-320x202.jpg",
+                            title:"Donec facilis sodales leo sit amet laoreet",
+                            time:"October 11th, 2015",
+                            text:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
                             comments:{
                             },
                         },
                         {
                             position:"bottom",
                             tutorial:true,
-                            img:"",
-                            title:"",
-                            time:"",
-                            text:"",
+                            img:"post_feat_img_20-320x202.jpg",
+                            title:"Proin eu purus sed aru aliquet curabir vens",
+                            time:"October 11th, 2015",
+                            text:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
                             comments:{
                             },
                         },
