@@ -12,11 +12,13 @@
                     <li v-for="element, i in position" :key="i">
                         {{element.title}}
                     </li>
+                    <li>
+                        <!-- bottone -->
+                        <button>
+                            Join US
+                        </button>
+                    </li>
                 </ul>
-                <!-- bottone -->
-                <button>
-                    Join US
-                </button>
                 <!-- search -->
                 <i class="fas fa-search"></i>
             </span>
@@ -48,13 +50,25 @@ export default {
         align-items: center;
         justify-content: space-between;
 
+        #img {
+            width: 20%;
+
+            img {
+                width: 100%;
+            }
+        }
+
         #box{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            li {
-                margin: 0 20px;
-                display: inline-block;
+            width: 80%;
+            ul {
+                width: 100%;
+                li {
+                    margin: 0 20px;
+                    display: inline-block;
+                }
             }
             
             button
@@ -62,7 +76,6 @@ export default {
                 color: #ffff;
                 background-color: black;
                 padding: 10px 20px;
-                margin: 0 30px;
             }
         }
 

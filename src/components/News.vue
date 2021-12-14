@@ -53,24 +53,42 @@
                 </div>
             </section>
             <!-- quarto blocco -->
-            <section>
+            <section id="lower-main">
                 <!-- left -->
-                <div>
+                <div id="left-lower">
                     <!-- title -->
+                    <h5>REVIEWED PRODUCT</h5>
+                    <h1>Mauris viverra atisan ipsum eget felis prims efficitur varius</h1>
                     <!-- text -->
+                    <p>In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum.</p>
                     <!-- button -->
+                    <button>READ MORE <i class="fas fa-angle-right"></i> </button> 
                 </div>
                 <!-- right -->
-                <div>
+                <div id="right-lower">
                     <!-- titolo -->
-                    <!-- immagini -->
-                    <!-- img/title/date/comments/description -->
+                    <h1>Tutorials &amp; guides</h1>
+                    <hr>
+                    <div class="column" >
+                        <div :class="item.tutorial == true ? `tutorial` : `none`" v-for="item,i in products" :key="i">
+                            <div class="toImg">
+                                <img :src="require(`@/assets/img/${item.img}`)" :alt="item.title">
+                            </div>
+                            <span>
+                                <h5>{{item.title}}</h5>
+                                <span>{{item.time}}|
+                                    <span v-if="item.comments.length != null">{{item.comments.length}} Comments</span>
+                                    <span v-else>Comments off</span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </section>
         </section>
        
         <h1 id="break-line">
-            READ OUR BLOG 
+            READ OUR BLOG <i class="fas fa-long-arrow-alt-right"></i>
         </h1>
   </div>
 </template>
@@ -90,6 +108,9 @@ export default {
     #middle {
         width: 60%;
         margin: auto;
+        .none {
+            display: none;
+        }
         #up-main {
             padding: 50px 0;
             h1 {
@@ -98,16 +119,13 @@ export default {
             }
             hr {
                 width: 100px;
-                border: 1px solid #fc8c53;
+                border: 0.5px solid #fc8c53;
                 margin: 0 auto 50px;
             }
         }
         .box {
             display: flex;
             justify-content: space-between;
-            .none {
-                display: none;
-            }
             span {
                 font-size: 10px;
                 color: #62676c;
@@ -161,6 +179,74 @@ export default {
                 color: #ffff;
                 background-color: black;
                 margin-top: 30px;
+                border: none;
+            }
+        }
+        #lower-main {
+            margin: 50px 0;
+            display: flex;
+            justify-content: space-between;
+            #left-lower {
+                width: 65%;
+                background-image: url("../assets/img/featured_article_2_bg.jpg");
+                background-position: center;
+                background-size: cover;
+                text-align: start;
+                color: #ffff;
+                padding: 60px;
+
+                p {
+                    font-size: 12px;
+                }
+                h1 {
+                    font-size: 30px;
+                    font-weight: 600;
+                    margin: 20px 0;
+                }
+                button {
+                    padding: 10px 30px;
+                    color: #ffff;
+                    background-color: black;
+                    margin-top: 30px;
+                    border: none;
+                }
+            }
+
+            #right-lower {
+                width: 30%;
+                text-align: start;
+                hr {
+                    width: 100px;
+                    border: 0.5px solid #fc8c53;
+                    margin: 20px 0;
+                }
+                .column {
+                    display: flex;
+                    flex-direction: column;
+
+                    .tutorial {
+                        display: flex;
+                        .toImg {
+                            margin-right: 15px;
+                            
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        span {
+                            font-size: 9px;
+                            color: #62676c;
+
+                            h5 {
+                                color: black;
+                                font-size: 11px;
+                                font-weight: 800;
+                            }
+                        }
+                    }
+                }
+
+            
             }
         }
     }

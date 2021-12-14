@@ -96,17 +96,24 @@ export default {
         display: flex;
         justify-content: space-between;
 
+        p {
+            font-size: 10px;
+            color: #898989;
+            strong {
+                color: #000;
+            }
+        }
+
         #link {
             i {
-                font-size: 25px;
-                padding: 15px 17px;
+                font-size: 10px;
+                padding: 10px 12px;
                 color: white;
                 border-radius: 50%;
                 margin: 0 10px;
             }
             .fa-facebook-f {
                 background-color: #4562b0;
-                padding: 15px 20px;
             }
             .fa-twitter {
                 background-color: #74def4;
@@ -116,7 +123,6 @@ export default {
             }
             .fa-youtube {
                 background-color: #951a0c;
-                padding: 15px 14px;
             }
         }  
     }

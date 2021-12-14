@@ -32,6 +32,7 @@ export default {
     background-color: black;
     color: #ffff;
     background-image: url("../assets/img/join_now_cta_bg.jpg");
+    background-position: center;
     width: 100%;
 
         #box {

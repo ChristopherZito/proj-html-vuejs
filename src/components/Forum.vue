@@ -21,7 +21,7 @@
             </div>
         </section>
         <h1 id="break-line">
-            GO TO THE FORUM
+            GO TO THE FORUM <i class="fas fa-long-arrow-alt-right"></i>
         </h1>
   </div>
 </template>
