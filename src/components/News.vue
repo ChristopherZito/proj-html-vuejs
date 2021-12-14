@@ -17,7 +17,7 @@
                         <div class="img">
                             <img :src="require(`@/assets/img/${item.img}`)" :alt="item.title">
                         </div>
-                        <h2>{{item.title}}</h2>
+                        <h5>{{item.title}}</h5>
                         <span>{{item.time}}|
                             <span v-if="item.comments.length != null">{{item.comments.length}} Comments</span>
                             <span v-else>Comments off</span>
@@ -38,8 +38,19 @@
             </section>
             <!-- terzo blocco main -->
             <section>
-                <!-- immagini -->
-                    <!-- img/title/date/comments/description -->
+                <div class="box" >
+                    <div :class="item.position == `bottom` ? `items` : `none`" v-for="item,i in products" :key="i">
+                        <div class="img">
+                            <img :src="require(`@/assets/img/${item.img}`)" :alt="item.title">
+                        </div>
+                        <h5>{{item.title}}</h5>
+                        <span>{{item.time}}|
+                            <span v-if="item.comments.length != null">{{item.comments.length}} Comments</span>
+                            <span v-else>Comments off</span>
+                        </span>
+                        <p>{{item.text}}</p>
+                    </div>
+                </div>
             </section>
             <!-- quarto blocco -->
             <section>
@@ -80,40 +91,52 @@ export default {
         width: 60%;
         margin: auto;
         #up-main {
+            padding: 50px 0;
             h1 {
                 font-size: 40px;
+                margin: 20px 0;
             }
             hr {
                 width: 100px;
                 border: 1px solid #fc8c53;
                 margin: 0 auto 50px;
             }
-            .box {
+        }
+        .box {
+            display: flex;
+            justify-content: space-between;
+            .none {
+                display: none;
+            }
+            span {
+                font-size: 10px;
+                color: #62676c;
+                margin: 10px 0 ;
+            }
+            p {
+                color: #62676c;
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .items{
                 display: flex;
                 justify-content: space-between;
-                .none {
-                    display: none;
-                }
-                .items{
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
+                flex-wrap: wrap;
 
-                    width: 30%;
-                    margin-bottom: 30px;
-                    text-align: start;
-                    /* debug */
-                    /* height: 300px; */
-                    /* background-color: red;  */  
-                }
-                .img {
+                width: 30%;
+                /* margin-bottom: 30px; */
+                text-align: start;
+                /* debug */
+                /* height: 300px; */
+                /* background-color: red;  */  
+            }
+            .img {
+                width: 100%;
+                /* debug */
+                /* background-color: black; */
+                /* height: 202px; */
+                img{
                     width: 100%;
-                    /* debug */
-                    /* background-color: black; */
-                    /* height: 202px; */
-                    img{
-                        width: 100%;
-                    }
                 }
             }
         }
