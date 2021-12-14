@@ -34,7 +34,7 @@ export default {
                         {
                             position:"top",
                             tutorial:false,
-                            img:"https://avada.theme-fusion.com/forum/wp-content/uploads/sites/51/2015/10/post_feat_img_25-700x441.jpg",
+                            img:"post_feat_img_25-320x202.jpg",
                             title:"Morbi vitae deu euismod vulptate sollicitudin",
                             time:"October 11th, 2015",
                             text:"Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenean dictum vitae nisl",
